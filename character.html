@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Jogo - Criação de Personagem</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="map.html">Mapa</a></li>
+            <li><a href="character.html">Personagem</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="character-creation">
+            <h2>Crie seu Personagem</h2>
+            <form>
+                <label for="skin-color">Cor da Pele:</label>
+                <select id="skin-color">
+                    <option value="light">Clara</option>
+                    <option value="medium">Média</option>
+                    <option value="dark">Escura</option>
+                </select>
+
+                <label for="eye-color">Cor dos Olhos:</label>
+                <select id="eye-color">
+                    <option value="blue">Azul</option>
+                    <option value="green">Verde</option>
+                    <option value="brown">Castanho</option>
+                </select>
+
+                <label for="hair-style">Estilo do Cabelo:</label>
+                <select id="hair-style">
+                    <option value="short">Curto</option>
+                    <option value="long">Longo</option>
+                    <option value="curly">Cacheado</option>
+                </select>
+
+                <button type="submit">Salvar Personagem</button>
+            </form>
+        </div>
+    </main>
+    <script src="scripts/character.js"></script>
+</body>
+</html>
