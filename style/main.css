@@ -7,96 +7,123 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; 
+    min-height: 100vh; /* Altura mínima da tela */
 }
 
-
+/* Estiliza a nav para ficar no topo da tela */
 nav {
     width: 100%;
-    background-color: #ccc; 
-    padding: 10px 0; 
-    position: fixed; 
+    background-color: #ccc; /* Cor de fundo cinza para o nav */
+    padding: 10px 0; /* Espaçamento interno */
+    position: fixed; /* Fixa a nav no topo */
     top: 0;
     left: 0;
-    z-index: 1000; 
+    z-index: 1000; /* Garante que a nav fique acima do conteúdo */
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
+    justify-content: space-between; /* Espaçamento entre itens da nav */
+    align-items: center; /* Alinha itens verticalmente */
 }
 
-/* Alinha os itens do nav à esquerda */
+/* Alinha os itens do nav à esquerda e centraliza */
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; 
-    align-items: center;
-    flex: 1; 
+    display: flex; /* Exibe os itens em linha */
+    align-items: center; /* Alinha itens verticalmente */
+    flex: 1; /* Ocupa o espaço disponível */
 }
 
-
+/* Estilo dos itens da nav */
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Espaçamento entre os itens */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #000; 
-    font-size: 16px; 
+    color: #000; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
 }
 
-
+/* Estilo do link de perfil, posicionado à direita */
 nav .profile-link {
-    margin-left: auto; 
+    margin-left: auto; /* Alinha o link de perfil à direita */
 }
 
-
+/* Espaçamento superior para o conteúdo abaixo da nav */
 main {
-    margin-top: 60px; 
+    margin-top: 60px; /* Ajusta o espaço para o conteúdo não ficar sobreposto pela nav */
     text-align: center;
 }
 
-
+/* Estiliza o container do botão iniciar jogo */
 .start-container {
-    margin: 20px 0; 
+    margin: 20px 0; /* Espaçamento superior e inferior */
 }
 
+/* Estilo do botão de iniciar jogo */
 #start-game {
-    padding: 10px 20px; 
-    font-size: 18px; 
-    background-color: #007bff; 
-    color: #fff; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
 }
 
+/* Estilo do botão ao passar o mouse */
 #start-game:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
 }
 
-
+/* Estiliza a descrição */
 .description {
-    margin-top: 20px; 
+    margin-top: 20px; /* Espaçamento superior */
 }
 
+/* Estiliza a navegação do mapa */
+#map {
+    display: flex;
+    justify-content: space-around; /* Espaçamento uniforme entre os itens */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+}
 
+/* Estilo dos níveis do mapa */
+.level {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid #333;
+}
+
+/* Estilo dos links dentro dos níveis do mapa */
+.level a {
+    text-decoration: none;
+    color: #000; /* Cor do texto */
+}
+
+/* Estiliza o layout responsivo */
 @media (max-width: 600px) {
     nav {
-        flex-direction: column; 
+        flex-direction: column; /* Exibe a nav em coluna em telas menores */
     }
 
     nav ul {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column; /* Exibe os itens da nav em coluna */
+        align-items: center; /* Centraliza os itens verticalmente */
         width: 100%;
     }
 
     nav ul li {
-        margin: 10px 0; 
+        margin: 10px 0; /* Espaçamento entre os itens em coluna */
     }
 
     nav ul li a {
-        font-size: 14px; 
+        font-size: 14px; /* Tamanho da fonte menor em telas menores */
     }
 }
