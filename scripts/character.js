@@ -11,5 +11,5 @@ document.querySelector('form').addEventListener('submit', function(event) {
     };
 
     localStorage.setItem('characterData', JSON.stringify(characterData));
-    window.location.href = 'map.html';
+    window.location.href = '../levels/level-one.html';
 });
